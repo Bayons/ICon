@@ -10,6 +10,14 @@
 % tiene(belarmino, yo_robot).
 % tiene(belarmino, hobbit).
 
+%%%%%%%%%%%%%%
+% EJERCICIO
+%%%%%%%%%%%%%%
+% Crea un fichero PROLOG, mi_biblioteca.pl, con una definición de tus
+% 	libros, diferenciados por géneros, y después realiza consultas
+%	concretas, con variables y con variables anónimas. Comenta cuál
+%	sería la pregunta original
+
 %%% ESTRUCTURAS
 libro(ficcion, relatos_completos).
 libro(ficcion, farenheit_451).
