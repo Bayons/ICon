@@ -1,3 +1,8 @@
+%%%% Clasico ejercicio de prolog del arbol genealogico donde hay que
+%	buscar entre miembros de la familia quien es que de quien.
+%	Añado que se puede hacer sin incluir generos, aunque por
+%	comodidad en este ejercicio he añadido esta regla.
+
 %%% HECHOS
 %% hombre
 hombre(juan).
@@ -48,5 +53,28 @@ pareja(javier, elena).
 
 %%% REGLAS
 
+%% es hijo/a de
+es_hijo_de(Hijo, Padre):-
+	hijo_de(Hijo, Padre),
+	hombre(Hijo).
+
+es_hija_de(Hija, Padre):-
+        hijo_de(Hija, Padre),
+        mujer(Hija).
+
+%% es abuelo/a de
+es_abuelo_de(Abuelo, Nieto):-
+	hijo_de(Padre, Abuelo),
+	hijo_de(Nieto, Padre),
+	hombre(Abuelo).
+
+es_abuela_de(Abuela, Nieto):-
+        hijo_de(Padre, Abuela),
+        hijo_de(Nieto, Padre),
+	mujer(Abuela).
 
 %%% Queries de ejemplo
+%%
+% es_hijo_de(X, julio).
+% es_abuelo_de(juan, X).
+% es_abuelo_de(javier, X).
