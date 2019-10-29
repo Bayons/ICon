@@ -1,5 +1,5 @@
 # ICon - Ingeniería del Conocimiento
-Los ejercicios aqui hechos pertenecen a la asignatura de Ingenieria del Conocimiento de la Universidad de Valladolid.
+Los ejercicios aquí hechos pertenecen a la asignatura de Ingeniería del Conocimiento de la Universidad de Valladolid.
 
 ## PROLOG
 En la carpeta [prolog](https://github.com/Bayons/ICon/tree/master/prolog) se encuentran los ejercicios dedicados al repaso de este lenguaje y a la creación con el mismo de metaintérpretes:
