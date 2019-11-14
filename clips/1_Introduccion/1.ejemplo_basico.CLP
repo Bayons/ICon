@@ -50,7 +50,24 @@
 )
 
 ; Para establecer una estrategia de resolucion de conflictos (solo en dialog):
-; (set-strategy depth)
-; Establecemos la estrategia de busqueda en profundidad (no es necesario).
+; (set-strategy depth).
+
 ; Se pueden establecer varios: depth, breadth, simplicity, complexity, lex,
-;	mea o random.
+;	mea o random. Conviene recordar que en los apuntes el profesor escribe
+;	mal la estrategia breaDth
+
+; Ejercicio 1:
+;	Determinar el orden de disparo de las reglas, el
+;	contenido de la memoria de trabajo y el índice de
+;	cada hecho cuando el motor de inferencias se para.
+
+; Respuesta dada en la entrega (no es del todo correcta):
+;; En el modo por defecto Depth, al generarse las consultas se almacenan como
+;; una pila por niveles, colocando cada nueva consulta en la parte más alta de
+;; las reglas de su nivel (contando además con el valor de prioridad de salida
+;; o salience). Además, por cada regla se genera el número de consultas
+;; necesarias para cubrir todos los hechos que coincidan, y primero se realizan
+;; las consultas de los últimos hechos introducidos.
+;;
+;; En el modo Breadth, el orden de prioridad se mantiene, pero las consultas se
+;; realizan antes sobre los primeros hechos que sobre los últimos.
