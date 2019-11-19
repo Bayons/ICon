@@ -26,3 +26,6 @@ En la carpeta [clips](https://github.com/Bayons/ICon/tree/master/clips) se encue
 - [Ejemplo básico](https://github.com/Bayons/ICon/blob/master/clips/1_Introduccion/1.ejemplo_basico.CLP): introduce el lenguaje y propone (en los comentarios) el primer ejercicio, que consiste en determinar el orden de disparo de las reglas creadas dependiendo de la estrategia de resolución de conflictos (se analizan solo las estrategias depth y breadth).
 - [Orden de disparo de reglas](https://github.com/Bayons/ICon/blob/master/clips/1_Introduccion/2.orden_de_disparo_de_reglas.CLP): utilizando unas reglas y hechos predefinidos en el enunciado, hay que comprobar en que orden se disparan las mismas reglas dependiendo de la estrategia de resolución (de manera similar al ejercicio 1 de Ejemplo básico.
 - [Coche](https://github.com/Bayons/ICon/blob/master/clips/1_Introduccion/3.coche.CLP): conociendo las causas que pueden provocar fallos en un coche, este programa razona qué está estropeado en el mismo.
+
+
+Si te ha sido útil, por favor no dudes en marcar este repositorio con una estrella.
