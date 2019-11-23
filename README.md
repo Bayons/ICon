@@ -22,10 +22,17 @@ En la carpeta [prolog](https://github.com/Bayons/ICon/tree/master/prolog) se enc
 ## CLIPS
 En la carpeta [clips](https://github.com/Bayons/ICon/tree/master/clips) se encuentran los ejercicios dedicados al autoaprendizaje en CLIPS y al manejo del formalismo Objeto-Atributo-Valor:
 
+### 0: Ejemplos del profesor:
+Carpeta con ejemplos muy simples de programas de CLIPS.
+
 ### 1: Introducción:
 - [Ejemplo básico](https://github.com/Bayons/ICon/blob/master/clips/1_Introduccion/1.ejemplo_basico.CLP): introduce el lenguaje y propone (en los comentarios) el primer ejercicio, que consiste en determinar el orden de disparo de las reglas creadas dependiendo de la estrategia de resolución de conflictos (se analizan solo las estrategias depth y breadth).
 - [Orden de disparo de reglas](https://github.com/Bayons/ICon/blob/master/clips/1_Introduccion/2.orden_de_disparo_de_reglas.CLP): utilizando unas reglas y hechos predefinidos en el enunciado, hay que comprobar en que orden se disparan las mismas reglas dependiendo de la estrategia de resolución (de manera similar al ejercicio 1 de Ejemplo básico.
 - [Coche](https://github.com/Bayons/ICon/blob/master/clips/1_Introduccion/3.coche.CLP): conociendo las causas que pueden provocar fallos en un coche, este programa razona qué está estropeado en el mismo.
+
+### 2: Introducción II:
+- [Semántica univaluada](https://github.com/Bayons/ICon/blob/master/clips/2_Introduccion_II_OAV/1_semantica_univaluada.CLP): contiene la plantilla para atributos univaluados de objetos junto con la regla que permite garantizar su propiedad.
+- [SP Cardio](https://github.com/Bayons/ICon/blob/master/clips/2_Introduccion_II_OAV/2_SP_Cardio.CLP): busca, mediante los conocimientos introducidos usando reglas, si uno de los dos pacientes representados en los hechos tiene una enfermedad cardiovascular. En la misma [carpeta](https://github.com/Bayons/ICon/tree/master/clips/2_Introduccion_II_OAV) se encuentra tanto el enunciado del ejercicio como la documentación a realizar para el mismo.
 
 
 Si te ha sido útil, por favor no dudes en marcar este repositorio con una estrella.
