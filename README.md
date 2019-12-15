@@ -2,7 +2,7 @@
 Los ejercicios aquí hechos pertenecen a la asignatura de Ingeniería del Conocimiento de la Universidad de Valladolid.
 
 ## APUNTES
-En la carpeta [Apuntes](https://github.com/Bayons/ICon/tree/master/Apuntes) se encuentran los resúmenes de las diapositivas de la asignatura ICon escritos con la intención de que cualquiera pueda comprenderlos (es posible que contengan fallos). También contiene (o contendrá) glosarios del lenguaje utilizado a la hora de tratar Lógica de Primer Orden y Lenguaje Proposicional. En el futuro se pretende que estén en subidos en Latex para que cualquiera pueda modificarlos.
+En la carpeta [Apuntes](https://github.com/Bayons/ICon/tree/master/Apuntes) se encuentran los resúmenes de las diapositivas de la asignatura ICon escritos con la intención de que cualquiera pueda comprender la asignatura (es posible que contengan fallos). También contiene (o se pretende que contenga) glosarios del lenguaje utilizado a la hora de tratar Lenguaje Proposicional y Lógica de Primer Orden. En el futuro se pretende que estos apuntes estén subidos en Latex para que cualquiera pueda modificarlos mediante un fork y mejorar las definiciones escritas o solucionar los errores cometidos.
 
 ## PROLOG
 En la carpeta [prolog](https://github.com/Bayons/ICon/tree/master/prolog) se encuentran los ejercicios dedicados al repaso de este lenguaje y a la creación con el mismo de metaintérpretes:
