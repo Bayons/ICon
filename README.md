@@ -35,4 +35,4 @@ Carpeta con ejemplos muy simples de programas de CLIPS.
 - [SP Cardio](https://github.com/Bayons/ICon/blob/master/clips/2_Introduccion_II_OAV/2_SP_Cardio.CLP): busca, mediante los conocimientos introducidos usando reglas, si uno de los dos pacientes representados en los hechos tiene una enfermedad cardiovascular. En la misma [carpeta](https://github.com/Bayons/ICon/tree/master/clips/2_Introduccion_II_OAV) se encuentra tanto el enunciado del ejercicio como la documentación a realizar para el mismo.
 
 
-Si te ha sido útil, por favor no dudes en marcar este repositorio con una estrella.
+Si te ha sido útil, por favor no dudes en marcar este repositorio con una estrella. Me ayudará a ver lo valioso que está siendo este repositorio y a seguir mejorándolo.
