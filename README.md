@@ -17,7 +17,7 @@ En la carpeta [prolog](https://github.com/Bayons/ICon/tree/master/prolog) se enc
 - [Listas](https://github.com/Bayons/ICon/blob/master/prolog/3.1-listas.pl): busca en listas los elementos indicados
 - [Bicicleta](https://github.com/Bayons/ICon/blob/master/prolog/3.2-bicicleta.pl): descompone la parte de la bicicleta que indiques en elementos básicos
 ### Repaso 4 PROLOG:
-- WIP
+- [3 en Raya](https://github.com/Bayons/ICon/blob/master/prolog/4.1-3_en_raya.pl): devuelve la jugada capaz de ganar la partida o evitar que la gane el rival
 
 ## CLIPS
 En la carpeta [clips](https://github.com/Bayons/ICon/tree/master/clips) se encuentran los ejercicios dedicados al autoaprendizaje en CLIPS y al manejo del formalismo Objeto-Atributo-Valor:
