@@ -7,16 +7,16 @@ En la carpeta [Apuntes](https://github.com/Bayons/ICon/tree/master/Apuntes) se e
 ## PROLOG
 En la carpeta [prolog](https://github.com/Bayons/ICon/tree/master/prolog) se encuentran los ejercicios dedicados al repaso de este lenguaje y a la creación con el mismo de metaintérpretes:
 
-### Repaso 1 PROLOG:
+### Repaso de PROLOG 1:
 - [Familia](https://github.com/Bayons/ICon/blob/master/prolog/1.1-familia.pl): hace preguntas sobre las lineas familiares
-### Repaso 2 PROLOG:
+### Repaso de PROLOG 2:
 - [Mi biblioteca](https://github.com/Bayons/ICon/blob/master/prolog/2.1-mi_biblioteca.pl): contiene unos pocos ejemplos de estructuras
 - [Casa Austria](https://github.com/Bayons/ICon/blob/master/prolog/2.2-casa_austria.pl): contiene ejemplos de operadores
 - [Combinatorio](https://github.com/Bayons/ICon/blob/master/prolog/2.3-combinatorio.pl): realiza una combinacion sin repeticion
-### Repaso 3 PROLOG:
+### Repaso de PROLOG 3:
 - [Listas](https://github.com/Bayons/ICon/blob/master/prolog/3.1-listas.pl): busca en listas los elementos indicados
 - [Bicicleta](https://github.com/Bayons/ICon/blob/master/prolog/3.2-bicicleta.pl): descompone la parte de la bicicleta que indiques en elementos básicos
-### Repaso 4 PROLOG:
+### Repaso de PROLOG 4:
 - [3 en Raya](https://github.com/Bayons/ICon/blob/master/prolog/4.1-3_en_raya.pl): devuelve la jugada capaz de ganar la partida o evitar que la gane el rival
 
 ## CLIPS
