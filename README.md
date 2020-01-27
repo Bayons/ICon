@@ -18,7 +18,7 @@ En la carpeta [prolog](https://github.com/Bayons/ICon/tree/master/prolog) se enc
 - [Bicicleta](https://github.com/Bayons/ICon/blob/master/prolog/3.2-bicicleta.pl): descompone la parte de la bicicleta que indiques en elementos básicos
 ### Repaso de PROLOG 4:
 - [3 en Raya](https://github.com/Bayons/ICon/blob/master/prolog/4.1-3_en_raya.pl): devuelve la jugada capaz de ganar la partida o evitar que la gane el rival
-### Ejercicios de autómatas
+### Ejercicios de autómatas:
 - [Ejemplo propio de autómata](https://github.com/Bayons/ICon/blob/master/prolog/5.1_ejemplo_propio.pl): comprueba que una cadena tiene el doble de b's que de a's. Contiene además documentación de cada paso dado y de todas las funciones, junto con pequeños consejos para realizar estos ejercicios.
 
 ## CLIPS
