@@ -13,6 +13,12 @@
  * 		estado final eF si no recibe más elementos.
  */
 
+/*
+ * Ejemplo de ejecución:
+ * ?- resuelve([a,a,a,b,b,b,b,b,b], X).
+ * Resultado: X = 1 (correcto)
+ */
+
 /* caso(E1, A, P1, E2, P2, M, N)*/
 /* Argumentos:
  * - E1: estado actual.
@@ -94,15 +100,27 @@ resuelve(L,X):-
     X is 1,
     !.
 
-
-
-
 /* Consejos:
+ * - Esquematizar cada estado, aunque sea mentalmente, para saber qué hace
+ *	cada uno, a cuál va cada uno y adonde. En este caso hay 2 estados
+ *	sin contar el final: el primero recibe el caracter 'a' y mete en
+ *	la pila dos 'a' y el segundo recibe 'b' y elimina un 'a' de la
+ *	pila. Pero quizás otra persona pueda hacerlo de otro modo y con
+ *	otros estados.
+ *
  * - Comenzar por los casos. Ayudan a ver el movimiento de cada estado y
  * 	permiten saber qué es esencial que tenga la función equivalente a
  * 	'transita'.
+ *
  * - No pensar en el meta-interprete. Aquello de solve(...) es solo un
  *	nombre que le da a la función que, después, puedes llamar como
- *	quieras. Aquí, solve se llama transita.
+ *	quieras. Aquí, solve se llama transita. Si quisieramos, por
+ *	ejemplo, analizar las reglas de derecha a izquierda (pregunta
+ *	típica de prolog), cambiariamos de orden las llamadas a caso(...)
+ *	y a transita(...) en la segunda parte de transita (la de la
+ *	llamada recursiva).
  *
+ * - No es obligatorio usar solo una pila. Si crees que el ejercicio se
+ *	simplifica mucho utilizando dos, utilizalas. En el siguiente
+ *	ejercicio de autómata, se utilizarán dos para ver mejor el caso.
  */
