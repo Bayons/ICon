@@ -20,6 +20,7 @@ En la carpeta [prolog](https://github.com/Bayons/ICon/tree/master/prolog) se enc
 - [3 en Raya](https://github.com/Bayons/ICon/blob/master/prolog/4.1-3_en_raya.pl): devuelve la jugada capaz de ganar la partida o evitar que la gane el rival
 ### Ejercicios de autómatas:
 - [Ejemplo propio de autómata](https://github.com/Bayons/ICon/blob/master/prolog/5.1_ejemplo_propio.pl): comprueba que una cadena tiene el doble de b's que de a's. Contiene además documentación de cada paso dado y de todas las funciones, junto con pequeños consejos para realizar estos ejercicios.
+- [Autómata con dos pilas](https://github.com/Bayons/ICon/blob/master/prolog/5.2_varias_pilas.pl): comprueba que una cadena tiene el mismo número de a's, b's y c's.
 
 ## CLIPS
 En la carpeta [clips](https://github.com/Bayons/ICon/tree/master/clips) se encuentran los ejercicios dedicados al autoaprendizaje en CLIPS y al manejo del formalismo Objeto-Atributo-Valor:
