@@ -53,3 +53,18 @@ comprueba(L, Res):-
     Ef = eF,
     Res is 1,
     !.
+    
+% Meta-intérprete Vanilla mejorado
+% Llamada con el meta-interprete:
+%	solve(comprueba([a,a,b,b,c,c], X)).
+solve(A):-
+    predicate_property(A,built_in),
+    !,
+    call(A).
+solve(true).
+solve((A,B)):-
+	solve(A),
+	solve(B).
+solve(A):-
+	clause(A,B),
+	solve(B).
