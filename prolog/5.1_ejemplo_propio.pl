@@ -71,15 +71,39 @@ resuelve(L,X):-
     X is 1,
     !.
 
-% Meta-intérprete Vanilla mejorado
-% Llamada con el meta-interprete:
-%	solve(comprueba([a,a,b,b,c,c], X)).
+% Esto no es necesario. Lo dan en el examen para solucionar un problema de
+% privilegios (que curiosamente también tengo en mi ordenador). En
+% principio parece que no hace falta aprendérselo, porque lo dan ellos
+% mismos.
 solve(A):-
     predicate_property(A,built_in),
     !,
     call(A).
+
+% Meta-intérprete Vanilla mejorado
+% El meta-intérprete en principio solo sirve para hacer llamadas tal y
+% como las harías directamente sin él (en este caso, con resuelve(...),
+% pero con la ventaja de que se le pueden añadir ciertas
+% 'funcionalidades'. Esto significa que el meta-intérprete, sin esas
+% funcionalidades, se comportaría en principio como la llamada directa al
+% programa.
+%
+% Las llamadas con el meta-intérprete serían solve(resuelve(...)). En este
+% caso, el meta-intérprete solo tiene la 'funcionalidad' de mejora (ese !
+% que se supone que se salta iteraciones innecesarias en este caso, creo),
+% por lo que no notaremos la diferencia en este ejemplo, pero hay otras
+% muchas como pintar traza que sí ofrecen cambios notables. Existen muchas
+% de estas 'funcionalidades' extra aquí:
+% https://github.com/eduglzg/Ingenieria-Informatica/blob/master/TercerCurso/ICON/Prolog/metainterpretes.pl
+%
+% Un ejemplo de llamada para este caso sería este:
+% 	solve(resuelve([a,a,b,b,b,b],X)).
+% 	Respuesta: X = 1.
+% Como vemos, la diferencia entre usar solve y no usarlo es nula en este
+% caso. En otros ejemplos utilizaré otros meta-intérpretes.
 solve(true).
 solve((A,B)):-
+	!,
 	solve(A),
 	solve(B).
 solve(A):-
