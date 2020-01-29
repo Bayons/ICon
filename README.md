@@ -22,6 +22,8 @@ En la carpeta [prolog](https://github.com/Bayons/ICon/tree/master/prolog) se enc
 - [Ejemplo propio de autómata](https://github.com/Bayons/ICon/blob/master/prolog/5.1_ejemplo_propio.pl): comprueba que una cadena tiene el doble de b's que de a's. Contiene además documentación de cada paso dado y de todas las funciones, junto con pequeños consejos para realizar estos ejercicios.
 - [Autómata con dos pilas](https://github.com/Bayons/ICon/blob/master/prolog/5.2_varias_pilas.pl): comprueba que una cadena tiene el mismo número de a's, b's y c's.
 - [Autómata con varias pilas](https://github.com/Bayons/ICon/blob/master/prolog/5.3_varias_pilas.pl): comprueba varios casos a la vez mediante 3 pilas.
+- [Ejemplo de un examen](https://github.com/Bayons/ICon/blob/master/prolog/5.4_ejemplo_de_examen.pl): comprueba que el número de letras 'b' (en el medio de la cadena) sea el mismo que la suma del resto de letras.
+- [Palíndromos](https://github.com/Bayons/ICon/blob/master/prolog/5.5_palindromos.pl): comprueba que una cadena de palabras forme un palíndromo.
 
 ## CLIPS
 En la carpeta [clips](https://github.com/Bayons/ICon/tree/master/clips) se encuentran los ejercicios dedicados al autoaprendizaje en CLIPS y al manejo del formalismo Objeto-Atributo-Valor:
