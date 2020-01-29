@@ -65,3 +65,48 @@ solve((A,B)):-
 solve(A):-
 	clause(A,B),
 	solve(B).
+
+% Funcion propia. nl significa 'new line'.
+pinta_call(A):-
+	write('Call: '),
+	write(A),
+	nl.
+pinta_exit(A):-
+	write('Exit: '),
+	write(A),
+	nl.
+
+% Meta-intérprete Vanilla mejorado con traza
+% Llamada con el meta-interprete:
+%	solve_traza(comprueba([a,a,b,b,c,c], X)).
+solve_traza(A):-
+    predicate_property(A,built_in),
+    !,
+    call(A).
+solve_traza(true).
+solve_traza((A,B)):-
+	solve_traza(A),
+	solve_traza(B).
+solve_traza(A):-
+	pinta_call(A),
+	clause(A,B),
+	solve_traza(B),
+	pinta_exit(A).
+
+% Meta-intérprete Vanilla mejorado con traza y de derecha a izquierda
+% De derecha a izquierda es tan solo cambiar A por B en el 3er bloque.
+% Llamada con el meta-interprete:
+%	solve_traza(comprueba([a,a,b,b,c,c], X)).
+solve_traza_inverso(A):-
+    predicate_property(A,built_in),
+    !,
+    call(A).
+solve_traza_inverso(true).
+solve_traza_inverso((A,B)):-
+	solve_traza_inverso(B),
+	solve_traza_inverso(A).
+solve_traza_inverso(A):-
+	pinta_call(A),
+	clause(A,B),
+	solve_traza_inverso(B),
+	pinta_exit(A).
