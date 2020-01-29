@@ -33,15 +33,6 @@ caso(e3, d,     [],     [], [d|P3], e3,     [],     [],       P3).
 mueve(e3, [], [], [], [], eF).
 
 mueve(E1, [Li|L], Pi1, Pi2, Pi3, Ef):-
-		write('Entrada: '),
-		write(Li),
-		write(', P1: '),
-		write(Pi1),
-		write(', P2: '),
-		write(Pi2),
-		write(', P3: '),
-		write(Pi3),
-		nl,
 	caso(E1, Li, Pi1, Pi2, Pi3, E2, Pn1, Pn2, Pn3),
 	mueve(E2, L, Pn1, Pn2, Pn3, Ef).
 
@@ -51,3 +42,49 @@ comprueba(L, Res):-
 	Ef = eF,
 	Res is 1,
 	!.
+
+% Meta-interprete Vanilla mejorado
+solve(A):-
+    predicate_property(A,built_in),
+    !,
+    call(A).
+solve(true):-
+	!.
+solve((A,B)):-
+	!,
+	solve(A),
+	solve(B).
+solve(A):-
+	clause(A,B),
+	solve(B).
+
+% Meta-interprete con traza y tabulacion
+solve_traza_tab(A,_):-
+    predicate_property(A,built_in),
+    !,
+    call(A).
+solve_traza_tab(true,_):-!.
+solve_traza_tab((A, B),N) :-!,solve_traza_tab(A,N), solve_traza_tab(B,N).
+solve_traza_tab(A, N):-tab(N*3),write('Call: '), write(A), nl,clause(A,B), N1 is N+1,solve_traza_tab(B,N1),tab(N*3),write('Exit: '), write(A), nl.
+
+solve_traza_tab(A):-
+    predicate_property(A,built_in),
+    !,
+    call(A).
+solve_traza_tab(A):- solve_traza_tab(A,0).
+
+% Meta-interprete con pruebas
+% Ejemplo de llamada:
+%	solve_proof(comprueba([a,b,c,c,d,d,d,d],Res), Prueba).
+solve_proof(A,_):-
+    predicate_property(A,built_in),
+    !,
+    call(A).
+solve_proof(true,true):-!.
+solve_proof((A,B),(ProofA,ProofB)):-
+	solve_proof(A,ProofA),
+	solve_proof(B,ProofB).
+solve_proof(A,(A:-Proof)):-
+	clause(A,B),
+	solve_proof(B,Proof).
+

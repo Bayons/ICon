@@ -80,11 +80,13 @@ pinta_exit(A):-
 % Llamada con el meta-interprete:
 %	solve_traza(comprueba([a,a,b,b,c,c], X)).
 solve_traza(A):-
-    predicate_property(A,built_in),
-    !,
-    call(A).
-solve_traza(true).
+	predicate_property(A,built_in),
+	!,
+	call(A).
+solve_traza(true):-
+	!.
 solve_traza((A,B)):-
+	!,
 	solve_traza(A),
 	solve_traza(B).
 solve_traza(A):-
