@@ -33,15 +33,6 @@ caso(e3, d,     [],     [], [d|P3], e3,     [],     [],       P3).
 mueve(e3, [], [], [], [], eF).
 
 mueve(E1, [Li|L], Pi1, Pi2, Pi3, Ef):-
-		write('Entrada: '),
-		write(Li),
-		write(', P1: '),
-		write(Pi1),
-		write(', P2: '),
-		write(Pi2),
-		write(', P3: '),
-		write(Pi3),
-		nl,
 	caso(E1, Li, Pi1, Pi2, Pi3, E2, Pn1, Pn2, Pn3),
 	mueve(E2, L, Pn1, Pn2, Pn3, Ef).
 
@@ -51,3 +42,17 @@ comprueba(L, Res):-
 	Ef = eF,
 	Res is 1,
 	!.
+
+solve(A):-
+    predicate_property(A,built_in),
+    !,
+    call(A).
+solve(true):-
+	!.
+solve((A,B)):-
+	!,
+	solve(A),
+	solve(B).
+solve(A):-
+	clause(A,B),
+	solve(B).
