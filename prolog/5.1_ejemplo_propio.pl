@@ -20,9 +20,8 @@
 % - E1: estado actual.
 % - A: elemento recibido en este caso desde la lista.
 % - P1: estado actual de la pila.
-% - E2: considerando el estado actual, el elemento recibido y el estado
-% 		actual de la pila, el estado al que se moverá en el
-% 		siguiente caso.
+% - E2: considerando el estado actual y el elemento recibido, el estado
+% 		al que se moverá en el siguiente caso.
 % - P2: estado siguiente de la pila.
 %
 % Casos:
@@ -117,6 +116,11 @@ solve(A):-
 %	la pila dos 'a' y el segundo recibe 'b' y elimina un 'a' de la
 %	pila. Pero quizás otra persona pueda hacerlo de otro modo y con
 %	otros estados.
+%
+% - Por lo visto, los estados son independientes de las pilas. Por tanto,
+% 	hay que evitar cambiar de estado (que no caso) en base a lo que
+% 	encontremos en la pila (o lo que no encontremos). Hay que hacerlo
+% 	siempre en relación a la entrada.
 %
 % - Comenzar por los casos. Ayudan a ver el movimiento de cada estado y
 % 	permiten saber qué es esencial que tenga la función equivalente a
