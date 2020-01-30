@@ -117,11 +117,6 @@ solve(A):-
 %	pila. Pero quizás otra persona pueda hacerlo de otro modo y con
 %	otros estados.
 %
-% - Por lo visto, los estados son independientes de las pilas. Por tanto,
-% 	hay que evitar cambiar de estado (que no caso) en base a lo que
-% 	encontremos en la pila (o lo que no encontremos). Hay que hacerlo
-% 	siempre en relación a la entrada.
-%
 % - Comenzar por los casos. Ayudan a ver el movimiento de cada estado y
 % 	permiten saber qué es esencial que tenga la función equivalente a
 % 	'transita'.

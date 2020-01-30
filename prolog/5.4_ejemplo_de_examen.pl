@@ -44,12 +44,10 @@ solve(A):-
 %	EXPLICACION
 % --------------------------
 %
-% Este ejercicio es algo más complicado de hacer si se hace con una sola
-% pila. Los estados no deben depender de las pilas, por lo tanto no
-% resulta lógico plantear diferentes acciones con la misma entrada y en el
-% mismo estado. Sin embargo, con una sola pila (y siendo el número más
-% largo el de en medio) parece que esta es la única solución. Por tanto,
-% la explicación de los estados es:
+% Este ejercicio es algo más complicado al ser mayor la subcadena
+% intermedia que las otras dos. Utilizando una sola pila, la mejor opción
+% es volver a rellenar la misma una vez el número de b's haya rebasado el
+% número de a's. La explicación de los estados es:
 %
 % Estado 1.
 % 	Siempre que reciba una 'a', añadirá este símbolo a la pila.
@@ -64,5 +62,4 @@ solve(A):-
 %
 % El autómata finaliza correctamente si la lista y la pila están vacías.
 % De esta manera, nos aseguramos que el funcionamiento es correcto. Sin
-% embargo, cabe replantearse si este es el mejor comportamiento teniendo
-% en cuenta lo anterior.
+% embargo, cabe replantearse si este es el mejor comportamiento.
